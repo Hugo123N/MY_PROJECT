@@ -1,0 +1,403 @@
+/* Chuyển page khi nhân menu */
+html {
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: Nunito-Black;
+    src:url('../font/Nunito-Regular.ttf') format('truetype'),
+    url('../font/Nunito-Regular.eot#iefix') format('embedded-opentype'),
+    url('../font/Nunito-Regular.woff') format('woff');
+    font-weight:normal;
+    font-style:normal;
+   }
+body{
+    font-family: Nunito-Black;
+}
+/* css */
+.ml{
+    margin-left: 25%;
+}
+.mt{
+    margin-top: 10%;
+}
+.mt-07{
+    margin-top: 7%;
+}
+.mt-05{
+    margin-top: 5%;
+}
+.mt-04{
+    margin-top: 4%;
+}
+.mt-03{
+    margin-top: 3%;
+}
+.mt-02{
+    margin-top: 2%;
+}
+.mb{
+    margin-bottom: 10%;
+}
+.mb-03{
+    margin-bottom: 3%;
+}
+.mb-05{
+    margin-bottom: 5%;
+}
+.pdt{
+    padding-top: 10%;
+}
+.pdt-05{
+    padding-top: 5%;
+}
+.pdt-03{
+    padding-top: 3%;
+}
+.pdb{
+    padding-bottom: 10%;
+}
+.pdb-04{
+    padding-bottom: 4%;
+}
+.bdr{
+    margin-left: 14%;
+    padding: 10px 50px 10px 50px;
+    border-radius: 45px;
+}
+.ovf{
+    overflow: hidden;
+}
+.logo{
+    width: 17%;
+}
+
+#navbar {
+    background-color: #fdcb6e;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: block;
+    z-index: 11;
+}
+
+/* #navbar a.nav-link:hover {
+    background-color: rgb(167, 124, 84);
+    color: rgb(255, 255, 255);
+} */
+.nav-link1 {
+    background-color: rgb(167, 124, 84);
+    color: rgb(255, 255, 255) !important;
+}
+.sec0{
+    position: relative;
+}
+#spans{
+    position: fixed;
+    top: 90vh;
+    right: 20px;
+    z-index: 10;
+    display: none;
+    opacity: 0.5;
+}
+#spans:hover{
+    opacity: 1;
+}
+
+.space{
+    width: 65%;
+}
+/* page 1 */
+.bgr{
+    width: 100%;
+    height: 670px;
+    position: relative;
+    background-image: url(../img/bg2.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 1500px;
+}
+
+.box {
+    width: 55%;
+    height: 15%;
+    border-radius: 15px;
+    background-color: black;
+    opacity: 0.4;
+    color: rgb(255, 232, 104);
+    text-align: center;
+    margin-left: 10%;
+    box-shadow: 4px 5px 5px rgb(109, 109, 109);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 0px 10px 0px;
+}
+.col-6a {
+    padding: 5% 5% 10% 10%;
+    overflow: hidden;
+}
+.col-6b {
+    padding: 10% 0% 0% 0%;
+    overflow: hidden;
+}
+
+/* slide show --------------*/
+.animate-left{position:relative; animation:animateleft 1s}
+@keyframes animateleft{
+    from{left:-100%;opacity:0} 
+    to{left:0;opacity:1}
+}
+.animate-right{position:relative; animation:animateright 1s}
+@keyframes animateright{
+    from{right:-100%;opacity:0} 
+    to{right:0;opacity:1}
+}
+.animate-top{position:relative;animation:animatetop 1.5s}
+@keyframes animatetop{
+    from{top:-100%; opacity:0}
+    to{top:0; opacity:1}
+}
+.animate-bottom{position:relative;animation:animatebottom 1.5s}
+@keyframes animatebottom{
+    from{bottom:-100%;opacity:0} 
+    to{bottom:0; opacity:1}
+}
+/* phóng to */
+.animate-scale{position:relative;animation:animatescale 1.5s}
+@keyframes animatescale{
+    from{transform:scale(0); opacity:0} 
+    to{transform:scale(1); opacity:1}
+}
+/* xoay */
+.animate-rotale{position:relative;animation:animatescale 1.5s}
+@keyframes animatescale{
+    0%{transform: rotate3d(45deg); opacity:0} 
+    50%{transform: rotate3d(0deg); opacity:1}
+}
+
+/* Page 3 */
+.page2right{
+    padding: 0px 20px 0px 25px;
+    position: relative;
+}
+.boxright{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.3;
+    border-right: 2px #684007 solid;
+    border-bottom: 4px #684007 solid;
+    border-radius: 30px;
+    z-index: -1;
+}
+
+
+.img1{
+    width: 70%;
+}
+.img2{
+    width: 79%;
+}
+.img3{
+    width: 100%;
+}
+h3{
+    color: rgb(116, 65, 0);
+    text-shadow: 1px 5px 5px rgb(170, 152, 110);
+}
+.btn{
+    background-color: rgb(116, 65, 0);
+    border: rgb(116, 65, 0) 1px;
+}
+.btn-danger{
+    background-color: rgb(255, 191, 0);
+    border: rgb(255, 191, 0);
+}
+
+.seccbg3{
+    position: relative;
+    background-attachment: none;
+}
+.seccbg5{
+    background-color: rgb(227, 255, 191);
+}
+.bg3{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 750px;
+    background-image: url(../img/bg1.jpg);
+    opacity: 0.4;
+    z-index: -2;
+}
+.bg3l{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 730px;
+    background-image: url(../img/bgl.jpg);
+    opacity: 0.9;
+    z-index: -2;
+}
+.bg4{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 750px;
+    background-color: rgb(255, 216, 144);
+    opacity: 0.5;
+    z-index: -1;
+}
+.bg4l{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 730px;
+    background-color: rgb(0, 74, 87);
+    opacity: 0.2;
+    z-index: -1;
+}
+.tp{
+    float: left;
+    color: rgb(161, 91, 0);
+    font-weight: bold;
+    margin-left: 10%;
+}
+
+/* Page 6 Bảng đăng kí */
+.formdki{
+    position: relative;
+    text-align: center;
+    padding-left: 2%;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+.dki{
+    float: left;
+    width: 48%;
+    margin-bottom: 3.5%;
+    margin-right: 2%;
+}
+
+.boderred{
+    border:1px rgb(53, 0, 0) solid;
+}
+
+/* /////////////////// TAB */
+
+/* ul.tabs{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    background-color: rgb(184, 161, 140);
+}
+ul.tabs li{
+    background: none;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+ul.tabs li.current{
+    border-radius: 10px 10px 0px 0px;
+    border: 1px rgb(172, 140, 111) solid;
+    border-bottom: 0px;
+    background: rgb(255, 255, 255);
+    color: rgb(17, 14, 14);
+}
+
+.tab-content{
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+    padding: 15px;
+    color: black;
+}
+
+.tab-content.current{
+    display: inherit;
+} */
+
+/* tab4 - w3school */
+/* Style tab */
+.tab {
+    padding-left: 25%;
+    background-color: rgb(184, 161, 140);
+  }
+  .tab2 {
+    padding-left: 25%;
+    background-color: rgb(184, 161, 140);
+  }
+  
+  /* Style nút tab button*/
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: 1px rgb(184, 161, 140) solid;
+    border-bottom: 0px;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.4s;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+  }
+  .tab2 button {
+    background-color: inherit;
+    float: left;
+    border: 1px rgb(184, 161, 140) solid;
+    border-bottom: 0px;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.4s;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+}
+  
+  /* khi hover nút button */
+  .tab button:hover {
+    background-color: rgb(224, 195, 156);
+  }
+  .tab2 button:hover {
+    background-color: rgb(224, 195, 156);
+  }
+
+  /* style nút khi đc chọn */
+  .tab button.active {
+    border-radius: 15px 15px 0px 0px;
+    color: rgb(117, 68, 22);
+    background-color: rgb(255, 255, 255);
+  }
+  .tab2 button.active2 {
+    border-radius: 15px 15px 0px 0px;
+    color: rgb(117, 68, 22);
+    background-color: rgb(255, 255, 255);
+}
+  /* Style phần hiển thị khi đc chọn */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+  }
+  .tabcontent2 {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+  }
+
+/* page 6 */
+.icon{
+    padding: 15% 0% 0% 20%;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+}

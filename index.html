@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="public/boostrap/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="public/jquery-3.5.0.js"></script>
+    <script src="public/jquery.collapser.js"></script>
+    <!-- css cá nhân -->
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>HOẠT HUYẾT VIMOS</title>
+</head>
+<body>
+
+    <!-- THANH MENU #1-->
+    <section class="sec0" id="sec0">
+        <nav id="navbar"  class="navbar navbar-expand-sm navbar-light">
+            <!-- 1180px #2-->
+            <div class="container">
+        
+                <!--logo-->
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo" src="public/img/favicon.png" alt="">
+                </a>
+        
+                <!--Nút bấm khi reposive-->
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <!-- danh mục -->
+                <div class=" collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="flr" style="float: lef; margin-left: 40%"></ul>
+                    <ul class=" navbar-nav mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">GIỚI THIỆU<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#trieuchung">TRIỆU CHỨNG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#giaiphap">GIẢI PHÁP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#huongdan">HƯỚNG DẪN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#datmua">ĐẶT MUA</a>
+                        </li>
+                    </ul>
+                </div>
+        
+            </div> <!--#2-->
+        </nav><!--#1-->
+        
+        <!-- nút scroll top -->
+        <a href="#sec0">
+            <span id="spans">
+                <i class="fas fa-caret-square-up" style="font-size:40px;color:rgb(23, 94, 128)"></i>
+            </span>
+        </a>
+    </section>
+
+    <!-- page 1 KHUNG HÌNH -->
+    <section class="bgr bg-overlay">
+        <div class="container pdt-03">
+            <div class="row">
+                <!-- trái -->
+                <div class="col-md-6 col-6a">
+                    <div class="animate-left">
+                        <div class="box mb">Đông Y Phương Nam</div>
+
+                        <h3 class="mb">Hoạt Huyết An Thần VIMOS</h3>
+                        <p style="color: rgb(163, 92, 0);"><i class="fa fa-user-md"></i> &nbsp Giúp hoạt huyết</p>
+                        <p style="color: rgb(170, 92, 0);"><i class="fa fa-user-md"></i> &nbsp Tăng cường lưu thông máu lên não</p>
+                        <p style="color: rgb(170, 92, 0);"><i class="fa fa-user-md"></i> &nbsp Giảm các triệu chứng thiểu năng tuần hoàn não</p>
+                        <p style="color: rgb(170, 92, 0);"><i class="fa fa-user-md"></i> &nbsp Giảm các triệu chứng choáng, suy nhược thần kinh.</p>
+
+                        <a href="#datmua" type="button" class="animate-bottom mt bdr btn btn-primary">ĐẶT NGAY</a>
+                    </div>
+                </div>
+                <!--phải -->
+                <div class="col-md-6 col-6 col-6b">
+                        <img class="img1 mySlides animate-right" src="public/img/san-pham-ha-huyet.png">
+                        <img class="img1 mySlides animate-right" src="public/img/san-pham-ha-huyet.png">
+                        <img class="img1 mySlides animate-right" src="public/img/san-pham-ha-huyet.png">
+                        <img class="img1 mySlides animate-right" src="public/img/san-pham-ha-huyet.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- page 2 -->
+    <section class="mb" id="trieuchung" >
+        <div class="container">  <!-- #2 -->
+            <!-- tiêu đề -->
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3 class="mt-07 mb-03">TRIỆU CHỨNG</h3>
+                </div>
+            </div>
+            <!-- Tab chuyển -->
+            <div class="row tab2">
+                <button class="tablinks2" onclick="openTab2(event, 'taibien')" id="defaultOpen2">Tai Biến Mạch Máu Não</button>
+                <button class="tablinks2" onclick="openTab2(event, 'thieunang')">Thiểu Năng Tuần Hoàn Máu</button>
+                <button class="tablinks2" onclick="openTab2(event, 'matngu')">Mất Ngủ Kinh Niên</button>
+            </div>
+
+            <!-- #3 -->
+            <div class="col-12 ovf">
+                <div id="taibien" class="tabcontent2">
+                    <div class="row">
+                        <div id="page2a" class="col-md-6 text-center pdt-05">
+                            <img class="img2 rounded" src="public/img/tai-bien.jpg" alt="">
+                        </div>
+                        <div id="page2b" class="col-md-6 pdt-05">
+                            <h5 class="mb-03" style="color: rgb(102, 58, 0);">Triệu chứng tai biến mạch máu não: </h5>
+                            <p style="color: rgb(163, 92, 0);"><i class="fa fa-user-md"></i> &nbsp Mỗi năm Việt Nam có khoảng 200.000 người mắc bệnh lý tai biến mạch máu não, gần một nửa trong số đó tử vong. Các triệu chứng giống như đột quỵ nhưng biến mất trong vòng từ 1 đến 2 giờ</p>
+                            <div class="boxa">
+                                <p style="color: rgb(163, 92, 0);"><i class="fa fa-user-md"></i> &nbsp Nguyên nhân chính của tai biến mạch máu não là do thiếu máu não, tai biến mạch máu não nhẹ được hiểu như một cơn thiếu máu cục bộ thoáng qua.</p>
+                                <p style="color: rgb(163, 92, 0);"><i class="fa fa-user-md"></i> &nbsp Nguy cơ cao ở những người có yếu tố nguy cơ như tăng huyết áp, đái tháo đường, béo phì, bệnh tim mạch…</p>
+                            </div>
+                            <button type="button" class="btn1 mt-05 btn btn-danger" id="defaultOpenbtn">Tìm Hiểu Thêm</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div id="tab-2" class="tab-content"> -->
+                <div id="thieunang" class="tabcontent2">
+                    <div class="row">
+                        <div class="col-md-6 text-center pdt-05 animate-left">
+                            <img class="img2 rounded" src="public/img/thieu-nang-tuan-hoan-mau.jpg" alt="">
+                        </div>
+                        <div class="col-md-6 pdt-05 animate-right">
+                            <h5 class="mb-03" style="color: rgb(102, 58, 0);">Triệu chứng thiểu năng tuần hoàn: </h5>
+                            <p style="color: rgb(163, 92, 0);"><i class="fa fa-user-md"></i> &nbsp Thiểu năng tuần hoàn não hay còn gọi là thiếu máu não thường gặp ở người cao tuổi và người lao động trí óc nhiều, được hiểu như một cơn thiếu máu cục bộ thoáng qua.</p>
+                            <div class="boxa1">
+                                <p style="color: rgb(163, 92, 0);"><i class="fa fa-user-md"></i> &nbsp khi não không được cung cấp đầy đủ lượng máu cần thiết sẽ ảnh hưởng tới chức năng của các cơ quan trong cơ thể.</p>
+                                <p style="color: rgb(163, 92, 0);"><i class="fa fa-user-md"></i> &nbsp Nguy cơ cao ở những người có yếu tố nguy cơ như tăng huyết áp, đái tháo đường, béo phì, bệnh tim mạch…</p>
+                            </div>
+                            <button type="button" class="btn2 mt-05 btn btn-danger"id="defaultOpenbtn1">Tìm Hiểu Thêm</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div id="tab-3" class="tab-content"> -->
+                <div id="matngu" class="tabcontent2">
+                    <div class="row">
+                        <div class="col-md-6 text-center pdt-05 animate-left">
+                            <img class="img2 rounded" src="public/img/mat-ngu-kinh-nien.jpg" alt="">
+                        </div>
+                        <div class="col-md-6 pdt-05 animate-right">
+                            <h5 class="mb-03" style="color: rgb(102, 58, 0);">Triệu chứng mất ngủ kinh niên: </h5>
+                            <p style="color: rgb(163, 92, 0);"><i class="fa fa-user-md"></i> &nbsp Thiếu máu não còn gây ra hiện tượng mất ngủ kinh niên, nếu không chú ý điều trị kịp thời, bệnh nhân có thể bị nhũn não, xuất huyết não gây liệt nửa người hoặc chết đột ngột.</p>
+                            <div class="boxa2">
+                                <p style="color: rgb(163, 92, 0);"><i class="fa fa-user-md"></i> &nbsp Điều cần chú ý ở đây là bệnh nhân rất dễ bị tái phát và dẫn tới bị tai biến mạch máu não thật sự.</p>
+                                <p style="color: rgb(163, 92, 0);"><i class="fa fa-user-md"></i> &nbsp Biểu hiện lâm sàng do tắc mạch hoặc do vỡ mạch khó có thể phân biệt, để chẩn đoán nguyên nhân phải dựa vào yếu tố tiền căn, bệnh có sẵn và xét nghiệm cận lâm sàng.</p>
+                            </div>
+                            <button type="button" class="btn3 mt-05 btn btn-danger" id="defaultOpenbtn2">Tìm Hiểu Thêm</button>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- #3 -->
+        </div><!-- #2 -->
+    </section>
+
+    <!-- page 3 -->
+    <section class="seccbg3" id="giaiphap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3 class="mt-07 mb-03">VIMOS - GIẢI PHÁP CHO NGƯỜI THIẾU MÁU NÃO</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <img class="img2 mt-07" src="public/img/san-pham-ha-huyet-1.png" alt="">
+                </div>
+                <div class="col-md-6 page2right">
+                    <h5 class="mb-03  mt-07" style="color: rgb(92, 52, 0);"></h5class> Vì sao Hoạt huyết an thần Vimos lại là sản phẩm khuyên dùng cho người thiếu máu não :</h5>
+                    <p style="color: rgb(33, 36, 70);"><i class="fa fa-user-md"></i> Hoạt huyết an thần Vimos giúp hoạt huyết, tăng cường lưu thông máu lên não, 
+                        giúp làm giảm các triệu chứng thiểu năng tuần hoàn não: hoa mắt, chóng mặt, mất ngủ, căng thẳng thần kinh, tê bì chân tay.</p>
+                    <p style="color: rgb(33, 36, 70);"><i class="fa fa-user-md"></i> Hoạt huyết an thần Vimos là sản phẩm chất lượng cao, do nhà máy dược phẩm Hải Dương sản xuất, đã được chiết xuất và phun sấy khô.</p>
+                    <p style="color: rgb(33, 36, 70);"><i class="fa fa-user-md"></i> Sản phẩm chứa hàm lượng Cao khô bạch quả là thành phần nguyên liệu chủ yếu nên cho công dụng hoạt huyết tốt trong khoảng 2 đến 5 ngày sử dụng.</p>
+                        <a class="nav-link" href="#datmua">
+                            <button type="button" style="margin-left: 30%; margin-top: 5%;" class="btn btn-danger">NHẤN MUA NGAY</button>
+                        </a>
+                    <div class="boxright"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- background nền -->
+        <div class="bg3"></div>
+        <div class="bg4"></div>
+    </section>
+
+
+     <!-- page 4  tab-->
+     <section class="mt" id="huongdan">
+        <div class="container"><!-- #2 -->
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3 class="mt-07 mb-03">HƯỚNG DẪN - THÀNH PHẦN</h3>
+                </div>
+            </div>
+
+            <!-- nút -->
+            <!-- <div class="row"> -->
+              <div class="row tab mb-05">
+                <button class="tablinks" onclick="openTab(event, 'thanhphan')"  id="defaultOpen">Thành Phần</button>
+                <button class="tablinks" onclick="openTab(event, 'huongdansd')">Hướng Dẫn Sử Dụng</button>
+                <button class="tablinks" onclick="openTab(event, 'chidinh')">Chỉ Định - Chống Chỉ Định</button>
+              </div>
+            <!-- </div> -->
+
+            <div id="thanhphan" class="tabcontent">
+                <div class="row mb">
+                    <div class="col-md-6 text-center animate-left" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <img style="width: 70%" class="rounded" src="public/img/sanpham2.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 animate-right" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <h5 class="mb-03" style="color: rgb(102, 58, 0);"><i class="fa fa-user-md"></i> &nbsp Thành phần của Hoạt huyết an thần VIMOS: </h5>
+                        <p><div class="tp">Cao Bạch quả:</div>.....................................100mg</p>
+                        <p><div class="tp">Cao Đinh lăng:</div>.....................................40mg</p>
+                        <p><div class="tp">Cao Thục địa: </div>......................................40mg</p>
+                        <p><div class="tp">Cao Đỏ ngọn :</div>.......................................50mg</p>
+                        <div class="boxa4">
+                            <p><span class="tp">Cao Giảo cổ lam:</span>....................................40mg</p>
+                            <p><span class="tp">Cao Bình vôi:</span>..............................................40mg</p>
+                            <p><span class="tp">Cao Hoàng tinh hoa đỏ:</span>.........................40mg</p>
+                            <p><span class="tp">Cao Hòe hoa:</span>...........................................40mg</p>
+                            <p><span class="tp">Thành phần khác:</span> &nbsp alc, avicell, magnesi stearate...</p>
+                        </div>
+                        <button type="button" class="btn4 ml mt-05 btn btn-danger" id="defaultOpenbtn3">Tìm Hiểu Thêm</button>
+                    </div>
+                </div>
+              </div>
+              
+            <div id="huongdansd" class="tabcontent">
+                <div class="row mb">
+                    <div class="col-md-6 text-center animate-left">
+                        <img style="width: 70%" class=" rounded" src="public/img/san-pham-ha-huyet-1.png" alt="">
+                    </div>
+                    <div class="col-md-6 animate-right">
+                        <h5 class="mb-03" style="color: rgb(102, 58, 0);"><i class="fa fa-user-md"></i> &nbsp Hướng Dẫn Sử Dụng: </h5>
+                        <p style="color: rgb(163, 92, 0);"><b>Đợt dùng:</b> Uống 2-3v/l, ngày 2-3 lần, uống sau ăn. Nên dùng 6-8 tuần liên tục.</p>
+                        <p style="color: rgb(163, 92, 0);"><b>Người lớn:</b> uống 2 - 3 viên/lần x 2 - 3 lần/ngày.</p>
+                        <p style="color: rgb(163, 92, 0);"><b>trẻ em:</b> uống 1 viên/lần x 2 - 3 lần/ngày.</p>
+                        <p style="color: rgb(163, 92, 0);"><b>Hạn dùng:</b> 36 tháng kể từ ngày sản xuất.</p>
+                        <div class="boxa5">
+                            <p style="color: rgb(163, 92, 0);"><b>Lưu ý:</b> Không dùng cho phụ nữ có thai, phụ nữ đang thời kỳ hành kinh, người đang chảy máu, người chuẩn bị phẫu thuật. Sản phẩm này không phải là thuốc, không có tác dụng thay thế thuốc chữa bệnh.</p>
+                        </div>
+                        <button type="button" class="btn5 ml mt-05 btn btn-danger" id="defaultOpenbtn4">Tìm Hiểu Thêm</button>
+                    </div>
+                </div>
+              </div>
+              
+            <div id="chidinh" class="tabcontent">
+                <div class="row mb">
+                    <div class="col-md-6 text-center animate-left">
+                        <img style="width: 80%" class="img2 rounded" src="public/img/chidinh.png" alt="">
+                    </div>
+                    <div class="col-md-6 animate-right">
+                        <h5 class="mb-03" style="color: rgb(102, 58, 0);"><i class="fa fa-user-md"></i> &nbsp Chỉ Định Của Bác Sĩ: </h5>
+                        <p style="color: rgb(163, 92, 0);"> &nbsp <b>1.</b> Thiểu năng tuần hoàn não, hội chứng tiền đình với các biểu hiện: đau đầu, hoa mắt, chóng mặt, mất ngủ, mất thăng bằng.</p>
+                        <div class="boxa6a">
+                            <p style="color: rgb(163, 92, 0);"> &nbsp <b>2.</b> Suy giảm trí nhớ, căng thẳng thần kinh, kém tập trung.</p>
+                            <p style="color: rgb(163, 92, 0);"> &nbsp <b>3.</b> Giảm chức năng não bộ: giảm trí nhớ, suy nhược thần kinh, di chứng não.</p>
+                            <p style="color: rgb(163, 92, 0);"> &nbsp <b>4.</b> Chứng run giật của bệnh nhân Parkinson.</p>
+                        </div>
+                        <h5 class="mb-03" style="color: rgb(102, 58, 0);"><i class="fa fa-user-md"></i> &nbsp Chống Chỉ Định: </h5>
+                        <p style="color: rgb(163, 92, 0);"> &nbsp <b>1.</b> Người mẫn cảm với bất cứ thành phần nào của thuốc.</p>
+                        <div class="boxa6b">
+                            <p style="color: rgb(163, 92, 0);"> &nbsp <b>2.</b> Không dùng cho phụ nữ có thai.</p>
+                            <p style="color: rgb(163, 92, 0);"> &nbsp <b>3.</b> Người có rối loạn về máu, rong kinh, người đang xuất huyết.</p>
+                        </div>
+                        <button type="button" class="btn6 ml mt-05 btn btn-danger" id="defaultOpenbtn5">Tìm Hiểu Thêm</button>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- #2 -->
+     </section>
+
+     <!-- page 5 -->
+     <section class="pdb seccbg5" id="danhgia">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3 class="mt-05 mb-03">CẢM NHẬN KHÁCH HÀNG VỀ VIMOS</h3>
+                </div>
+            </div>
+
+            <div class="row mt-05">
+
+                <div class="col-md-6">
+                    <div class="row">
+                        <!-- avatar -->
+                        <div class="col-3 pdt">
+                            <img class="img3 rounded-circle" src="public/img/nghe-si-uu-tu-kim-xuan.jpg" alt="">
+                        </div>
+                        <!-- bluan -->
+                        <div class="col-9">
+                            <span class="fa fa-star checked" style="font-size: 24px; color: rgb(255, 174, 0);"></span>
+                            <span class="fa fa-star checked" style="font-size: 24px; color: rgb(255, 174, 0);"></span>
+                            <span class="fa fa-star checked" style="font-size: 24px; color: rgb(255, 174, 0);"></span>
+                            <span class="fa fa-star checked" style="font-size: 24px; color: rgb(255, 174, 0);"></span>
+                            <span class="fa fa-star checked" style="font-size: 24px; color: rgb(255, 174, 0);"></span>
+                            <p style="color: rgb(136, 77, 0);     font-style: italic;">
+                                "Tôi bị đau đầu, chóng mặt từ lâu,đã từng sử dụng qua rất nhiều sản phẩm mà không
+                                 thuyên giảm được bạn giới thiệu sử dụng thuốc an thần Vimos tôi cảm thấy
+                                  rất tốt. Tôi ăn ngon, ngủ ngon hơn. Giá như tôi biết sản phẩm này từ sớm thì tuyệt vời."</p>
+                            <div class="info"><b style="color: rgb(28, 49, 98);">NS. Kim Xuân, 63 Tuổi</b> / TP.Hồ Chí Minh</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="row">
+                        <!-- avatar -->
+                        <div class="col-3 pdt">
+                            <img class="img3 rounded-circle" src="public/img/jetli.jpg" alt="">
+                        </div>
+                        <!-- bluan -->
+                        <div class="col-9">
+                            <span class="fa fa-star checked" style="font-size: 24px; color: rgb(255, 174, 0);"></span>
+                            <span class="fa fa-star checked" style="font-size: 24px; color: rgb(255, 174, 0);"></span>
+                            <span class="fa fa-star checked" style="font-size: 24px; color: rgb(255, 174, 0);"></span>
+                            <span class="fa fa-star checked" style="font-size: 24px; color: rgb(255, 174, 0);"></span>
+                            <span class="fa fa-star checked" style="font-size: 24px; color: rgb(255, 174, 0);"></span>
+                            <p style="color: rgb(143, 81, 0);     font-style: italic;">
+                                "Tôi bị đau đầu mất ngủ dai dẳng, thi thoảng cảm thấy choáng váng mặt mày 
+                                nhưng từ khi tôi sử dụng thuốc hoạt huyết an thần Vimos, 
+                                tôi cảm thấy khá hơn rất nhiều. Thật là một bài thuốc tốt!"</p>
+                            <div class="info"><b style="color: rgb(28, 49, 98);">Anh jetLi, 49 Tuổi</b> / TP.Hồ Chí Minh</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- page 6 -->
+    <section class="seccbg3 pdb-04" id="datmua">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3 class="mt-07 mb-03">ĐẶT MUA NGAY</h3>
+                </div>
+            </div>
+
+            <div class="row mt-03">
+                <div class="col-md-6" style="border-right: 2px #ffffff solid">
+                    <p style="color: rgb(156, 70, 0);"><i style="color: rgb(255, 255, 255); font-size: 22px;" class="fas fa-home"></i> &nbsp 319 C16 Cao Đẳng Thực Hành FPT, Quận 12, Tp.HCM</p>
+                    <p style="color: rgb(156, 70, 0);"><i style="color: rgb(255, 255, 255); font-size: 22px; margin-left: 3px;" class="fas fa-phone-square-alt"></i> &nbsp 076 922 0162</p>
+                    <img style="width: 30%" class="rounded" src="public/img/favicon.png" alt="">
+                    <div class="icon">
+                        <i style="float: left; font-size: 40px; color: rgb(28, 0, 155); margin: 15px 25px 0px 10px;" class="fab fa-facebook"></i>
+                        <i style="float: left; font-size: 40px; color: rgb(207, 0, 17); margin: 15px 25px 0px 10px;" class="fab fa-youtube"></i>
+                        <i style="float: left; font-size: 40px; color: rgb(0, 193, 207); margin: 15px 25px 0px 10px;" class="fab fa-twitter-square"></i>
+                        <i style="float: left; font-size: 40px; color: rgb(255, 145, 0); margin: 15px 25px 0px 10px;" class="fas fa-comment"></i>
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+                    <form onsubmit="return validateForm()" method="post" class="form-group formdki">
+
+                                <h3 class=" mb" style="color: rgb(255, 255, 255);">ĐĂNG KÍ MUA HÀNG</h3>
+
+                        <input type="text" class="dki form-control" name="ten" id="ten" placeholder="Tên">
+                        <input type="text" class="dki form-control" name="email" id="email" placeholder="Email">
+                        <input type="text" class="dki form-control" name="sodt" id="sodt" placeholder="Số điện thoại">
+                        <input type="number" min="0" max="10" class="dki form-control" name="soluong" id="soluong" placeholder="Số lượng">
+                        <div class="form-group">
+                            <textarea placeholder="Lời nhắn" class="form-control" name="mess" id="mess" rows="5" style="width: 98%"></textarea>
+                        </div>
+
+                        <div style="margin: 2% 3%;" class="alert-warning" role="alert">
+                            <strong id="kq"></strong>
+                        </div>
+
+                        <input value="GỬI" type="submit" class="btn btn-danger mb" style="padding: 2% 20%; border-radius: 30px;">
+                        <!-- background -->
+                        <!-- <div class="formbg"></div> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- background nền -->
+        <div class="bg3l"></div>
+        <div class="bg4l"></div>
+    </section>
+<footer style="background-color: rgb(26, 67, 68); clear: both;">
+    <div style="width: 100%; height: 30px; line-height: 30px; font-style: italic; color: white; font-size: 12px;" class=" text-center">Hugonhatnguyen</div>
+</footer>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- custom script -->
+    <script src="public/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+</html>
